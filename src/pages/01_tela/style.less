@@ -46,7 +46,7 @@ body {
 }
 
 .bold{
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .sizeRef{
@@ -55,59 +55,59 @@ body {
 
 
 .cinza1{
-  color: #5A6E7F;
+  color: #5A6E7F !important;
 }
 
 .preto{
-  color: #000;
+  color: #000 !important;
 }
 .azul{
-  color: #003660;  
+  color: #003660 !important;  
 }
 .cinza3{
   color: #231F20 !important;
 }
 
 .bg_azul{
-  background-color: #003660;
+  background-color: #003660 !important;
   padding: 0.5em; 
 }
 
 .azul2{
-  color: #85D1DF;
+  color: #85D1DF !important;
 }
 
 .roxo{
-  color: #850052; 
+  color: #850052 !important; 
 }
 
 .roxo2{
-  color: #B2006E; 
+  color: #B2006E !important; 
 }
 
 .roxo3{
-  color: #3C1053;
+  color: #3C1053 !important;
 }
 
 
 .rosa{
-  color: #EB0088;
+  color: #EB0088 !important;
 }
 
 .bg_rosa{
-  background-color: #EB0088;
+  background-color: #EB0088 !important;
 }
 
 .verde{
-  color: #8E9C28;
+  color: #8E9C28 !important;
 }
 
 .verde2{
-  color: #203232;
+  color: #203232 !important;
 }
 
 .amarelo{
-  color: #FBAE17;
+  color: #FBAE17 !important;
 }
 
 .bg_amarelo{
@@ -116,7 +116,7 @@ body {
 }
 
 .vermelho{
-  color: #BD1622;
+  color: #BD1622 !important;
 }
 
 .italic{
@@ -192,15 +192,30 @@ section{
 
 .sec1 {
   position: relative;
-  height: 56em;
+  height: 48em;
   z-index: 0;
 
   &::before{
     position: absolute;
     background-color: #e3e5df;
     content: '';
-    top:-15em;
+    top:0;
     left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url(../../assets/img/sec1.png);
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    position: absolute;
+    background: #00365f;
+    box-shadow: 0px 0px 2.11px rgba(0, 0, 0, 0.75);
+    content: '';
+    bottom: 0;
+    top: -15em;
     width: 100%;
     height: 15em;
   }
@@ -216,29 +231,50 @@ section{
     z-index: 0;
   }
 
+  .titulo{
+    position: absolute;
+    top: -2.1em;
+    left: 1em;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight:300;
+    z-index: 1;
+    text-transform: uppercase;
+  }
+
   .logo{
     position: absolute;
-    top: -3em;
-    width: 10em;
+    top: -3.5em;
+    width: 8em;
     right: 1em;
     -o-object-fit: contain;
     object-fit: contain;
     opacity: 1;
-    z-index: 0;
+    z-index: 1;
   }
+
+  .tela01_01{
+    position: absolute;
+    top: 6.5em;
+    width: 25em;
+    height: 16em;
+    right: 3em;
+    object-fit: contain;
+  }
+    
 
   .containerTxt{
     position: absolute;
-    top: 3em;
-    left: 20em;
-    width: 40em;
+    top: 0em;
+    left: 7.5em;
+    width: 50em;
+    background: #fff;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding: 2em;
+    padding-bottom: 4em;
 
-    h1{
-      position: relative;
-      font-weight: 500;
-      font-size: 1.6em;
-      line-height: 1.8em;
-    }
   }
 
   .containerVideo{
@@ -247,7 +283,7 @@ section{
     background: #292929;
     width: 39em;
     height: 22.1em;
-    top: 27.5em;
+    top: 22.5em;
     left: 14em;
 
     video{

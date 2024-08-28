@@ -10,34 +10,25 @@ block body
 
 		.body
 			section.sec1
-				img.bg.wow.fadeInLeft(src="../../assets/img/sec1a.png", alt="")
 				img.logo.wow.fadeInUp(src="../../assets/img/logo.svg", alt="")
+				.titulo.wow.fadeInUp Representante
 				
 				.containerTxt.wow.fadeInUp
-					h1.azul 
-						| Procedimentos e Cuidados Necessários <br> com as Amostras Grátis de Medicamentos
-					.text.text1
-						| <span class="bold roxo">Olá! Bem-vindo ao nosso treinamento anual!</span>
-					.text.text1.mt0_5
-						| Convidamos você, <span class="bold">Representante</span>,  <span class="bold">Gerente Distrital</span> ou <span class="bold">Gerente de Produtos</span> do nosso time de Campo, a fazer uma rápida atualização dos seus conhecimentos, afinal, você é o responsável pela distribuição dos nossos medicamentos junto aos profissionais de saúde.
-					.text.text1.mt0_5
-						| No final, veja o quanto aprendeu testando seus conhecimentos em nosso quiz. 
-					.text.text1.mt0_5
-						| Mas para começar, nada melhor que um vídeo que traz um pouco da importância das amostras grátis em nosso segmento.
+					.text.azul 
+						| Bem-vindo ao Treinamento Anual sobre Procedimentos e Cuidados Essenciais na Distribuição de Amostras Grátis de Medicamentos para uma breve atualização dos seus conhecimentos.
+					.text.text1.azul.bold 
+						| Você, Representante do nosso time de campo, em especial, desempenha um papel importante na distribuição dos nossos medicamentos aos profissionais de saúde.<br> Notará que nosso treinamento traz informações importantes sobre<br> os procedimentos, manuseios e cuidados com nossas amostras.
+					.text.text1.mt0_5.azul 
+						| Ao final, teste seus conhecimentos participando do nosso quiz.<br> Para começar, assista ao vídeo que destaca a importância das<br> amostras grátis no nosso setor.
 					.text.text1.mt0_5
 						| <span class="bold roxo">Dê play para assistir!</span>
+				img.wow.zoomIn.tela01_01(src="../../assets/img/tela01_01.svg", alt="")
 
 				.containerVideo.wow.zoomIn.delay1
 						video(src="../../assets/video/video1.mp4" controls controlsList="nodownload"  poster="../../assets/video/video1.png")
 
-				.blokc.wow.fadeInUp.delay1
-					//- .text
-					//- 	| <span class="bold roxo">Deixe sua opinião!</span>
-					.icons(item=1)
-						img.icon1(src="../../assets/img/sec1_ico1.svg", alt="", status="like")
-						img.icon3(src="../../assets/img/sec1_ico3.svg", alt="", status="deslike")
-						img.icon2(src="../../assets/img/sec1_ico2.svg", alt="", status="heart")
-						
+				
+			
 				
 			//- .secRef
 			section.sec2.wow.fadeInUp
