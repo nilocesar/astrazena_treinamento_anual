@@ -32,42 +32,44 @@ block body
 				
 			//- .secRef
 			section.sec2.wow.fadeInUp
-				.sec2_block01.wow.fadeInLeft
-					img(src="../../assets/img/sec2_block01.svg", alt="")
+				.sec2_block01.wow.fadeInUp
 					h4
-						| Composição da quantidade de amostras trabalhadas 
-					h4
-						| Responsável: Gerente de Produto
+						| Recebimento das Amostras e Aceite no Veeva 
+					h4.prop-l1
+						| RESPONSÁVEL: REPRESENTANTE
+					img.sec2_01_img(src="../../assets/img/sec2_01.svg", alt="")
 				
-				.containerTxt.wow.fadeInUp
-					.text.text1
-						| O <span class="bold">controle contábil da distribuição das amostras</span> é de extrema importância em nosso processo a fim de <span class="bold">evitar um faturamento desnecessário e consequente destinação de capital</span>.
-					.text.text1.mt0_5
-						| Por isso, é dever do GP:
+				//- .containerTxt.wow.fadeInUp
+				//- 	.text.text1
+				//- 		| O <span class="bold">controle contábil da distribuição das amostras</span> é de extrema importância em nosso processo a fim de <span class="bold">evitar um faturamento desnecessário e consequente destinação de capital</span>.
+				//- 	.text.text1.mt0_5
+				//- 		| Por isso, é dever do GP:
 				
-				.sec2_block07.wow.fadeInLeft
-					img.fundo(src="../../assets/img/sec2_block07.svg", alt="")
-					img.sec2_ico2.wow.zoomIn(src="../../assets/img/sec2_ico2.png", alt="")
-					.text.text1
-						| <span class="bold roxo">No sistema Veeva CRM, rever o saldo ativo analisando o ciclo atual -1, por representante. Determinada a quantidade, após o faturamento, as amostras são encaminhadas para a casa dos colaboradores.</span>
+				//- .sec2_block07.wow.fadeInLeft
+				//- 	img.fundo(src="../../assets/img/sec2_block07.svg", alt="")
+				//- 	img.sec2_ico2.wow.zoomIn(src="../../assets/img/sec2_ico2.png", alt="")
+				//- 	.text.text1
+				//- 		| <span class="bold roxo">No sistema Veeva CRM, rever o saldo ativo analisando o ciclo atual -1, por representante. Determinada a quantidade, após o faturamento, as amostras são encaminhadas para a casa dos colaboradores.</span>
 				
-				.sec2_block08.wow.fadeInLeft.delay1
-					img.fundo(src="../../assets/img/sec2_block08.svg", alt="")
-					img.sec2_ico2.wow.zoomIn(src="../../assets/img/sec2_block02.svg", alt="")
-					.text.text1.bold
-						| <a class="link" href="https://az.app.box.com/file/928749256110" target="_blank">Clique</a> e veja os limites máximos, por apresentação, para os produtos da linha CVRM.
+				//- .sec2_block08.wow.fadeInLeft.delay1
+				//- 	img.fundo(src="../../assets/img/sec2_block08.svg", alt="")
+				//- 	img.sec2_ico2.wow.zoomIn(src="../../assets/img/sec2_block02.svg", alt="")
+				//- 	.text.text1.bold
+				//- 		| <a class="link" href="https://az.app.box.com/file/928749256110" target="_blank">Clique</a> e veja os limites máximos, por apresentação, para os produtos da linha CVRM.
 				
-				.containerTxt.containerTxt2.wow.fadeInUp
-					.text.text1
-						| <span class="bold">Após o faturamento, as amostras são enviadas para a casa do Representante que deve fazer a confirmação de recebimento no sistema Veeva CRM.</span>
+				//- .containerTxt.containerTxt2.wow.fadeInUp
+				//- 	.text.text1
+				//- 		| <span class="bold">Após o faturamento, as amostras são enviadas para a casa do Representante que deve fazer a confirmação de recebimento no sistema Veeva CRM.</span>
 				
 				.info.wow.fadeInUp
-					img.sec2_block03.wow.zoomIn(src="../../assets/img/sec2_block03.svg", alt="")
+					//- img.sec2_block03.wow.zoomIn(src="../../assets/img/sec2_block03.svg", alt="")
 					.line
-						h4
-							| <span class="bold azul">Vamos ver se entendeu, arraste os procedimentos colocando-os na ordem correta.</span>
-					
-					.arrasteExercicio.arrasteExercicio1.mt1_5(arraste=1)
+						.text
+							| <b>O seu processo de controle e cuidados com as amostras começa<br> no recebimento delas.</b> É importante confirmar todas as quantidades<br> com os entregadores e, na sequência,<br> realizar o aceite delas no Veeva.
+						img.sec2_ico2.wow.zoomIn(src="../../assets/img/sec2_ico2.png", alt="")
+						.text.bold.azul.mt1_5 <b>Vamos ver se conhece a ordem correta dos procedimentos que devem ser realizados?</b>
+
+					.arrasteExercicio.arrasteExercicio1(arraste=1)
 						.arrasteExercicioBase
 							.itCons
 								.itContainer
@@ -75,7 +77,7 @@ block body
 								.itContainer
 									.it.it2.dragDrop_element(arraste=2) Clicar em 'Recibo de Amostras Pendentes'
 								.itContainer
-									.it.it3.dragDrop_element(arraste=3) Confirmar o número do lote no sistema com o número que está na caixa da amostra
+									.it.it3.dragDrop_element(arraste=3) Confirmar o número do lote no sistema
 								.itContainer
 									.it.it4.dragDrop_element(arraste=4) Clicar no botão confirmar
 								.itContainer
@@ -101,12 +103,12 @@ block body
 							| <span>Clique</span> para conferir.
 
 						.feed.feed-pos.wow.fadeIn
-							img(src="../../assets/img/sec2_block05.svg", alt="")
+							img(src="../../assets/img/check.svg", alt="")
 							.text.text4
 								| <span class="bold">Uau! 100% certo, você é um especialista no assunto!</span>
 						
 						.feed.feed-neg.wow.fadeIn
-							img(src="../../assets/img/sec2_block06.svg", alt="")
+							img(src="../../assets/img/erro.svg", alt="")
 							.text.text4
 								| <span class="bold">Humm... teve alguns erros :(. Dê uma olhada na ordem correta e, se achar que está com dificuldade nesse tema, <a class="link" href="https://astrazeneca.sabacloud.com/Saba/Web_spf/E102PRD0001/common/ledetail/cours000000025483552/latestversion" target="_blank">clique</a> e assista ao vídeo com orientações completas.</span>
 						
