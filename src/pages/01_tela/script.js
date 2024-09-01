@@ -8,6 +8,10 @@ events.on("ready", function () {
 
   controlComplete();
   animate_wow();
+
+  $(".btnVoltar").on("click", function () {
+    navigate.goto("00_menu");
+  });
 });
 
 function modal() {

@@ -1,8 +1,8 @@
 events.on("ready", function () {
   animate_wow();
 
-  $(".it").addClass("inativo");
-  $(".it1").removeClass("inativo");
+  // $(".it").addClass("inativo");
+  // $(".it1").removeClass("inativo");
 });
 
 function animate_wow() {

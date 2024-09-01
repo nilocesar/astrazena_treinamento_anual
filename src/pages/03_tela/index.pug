@@ -10,519 +10,204 @@ block body
 
 		.body
 			section.sec1
-				img.bg.wow.fadeInLeft(src="../../assets/img/sec1a.png", alt="")
 				img.logo.wow.fadeInUp(src="../../assets/img/logo.svg", alt="")
+				.titulo.wow.fadeInRight.btnVoltar 
+					button  <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+					| <span>Gerente de Produto OU ANALISTA DE MARCA</span>
 				
 				.containerTxt.wow.fadeInUp
-					h1.azul 
-						| Procedimentos e Cuidados Necessários <br> com as Amostras Grátis de Medicamentos
-					.text.text1
-						| <span class="bold roxo">Olá! Bem-vindo ao nosso treinamento anual!</span>
-					.text.text1.mt0_5
-						| Convidamos você, <span class="bold">Representante</span>,  <span class="bold">Gerente Distrital</span> ou <span class="bold">Gerente de Produtos</span> do nosso time de Campo, a fazer uma rápida atualização dos seus conhecimentos, afinal, você é o responsável pela distribuição dos nossos medicamentos junto aos profissionais de saúde.
-					.text.text1.mt0_5
-						| No final, veja o quanto aprendeu testando seus conhecimentos em nosso quiz. 
-					.text.text1.mt0_5
-						| Mas para começar, nada melhor que um vídeo que traz um pouco da importância das amostras grátis em nosso segmento.
-					.text.text1.mt0_5
-						| <span class="bold roxo">Dê play para assistir!</span>
+					.text.azul 
+						| Bem-vindo ao Treinamento Anual sobre Procedimentos e Cuidados Essenciais na Distribuição de Amostras Grátis de Medicamentos para uma breve atualização dos seus conhecimentos.
+					.text.text1.azul.bold 
+						| <b>Convidamos você, Gerente de Produto ou Analista de Marca, para uma breve atualização dos seus conhecimentos. São informações importantes uma vez que as amostras grátis representam parte de nossa reputação e posicionamento diante do mercado farmacêutico.</b>
+					.text.text1.mt0_5.azul 
+						| Ao final, teste seus conhecimentos participando do nosso quiz.
+					.text.text1.mt1.azul.ml 
+						| Para começar, assista ao vídeo que destaca a<br> importância das amostras grátis no nosso setor.
+					.text.text1.mt1_5.roxo.ml 
+						| <b class="roxo">Basta dar play, bons estudos!</b>
+					img.wow.zoomIn.tela01_01(src="../../assets/img/tela01_01.svg", alt="")
 
 				.containerVideo.wow.zoomIn.delay1
 						video(src="../../assets/video/video1.mp4" controls controlsList="nodownload"  poster="../../assets/video/video1.png")
 
-				.blokc.wow.fadeInUp.delay1
-					//- .text
-					//- 	| <span class="bold roxo">Deixe sua opinião!</span>
-					.icons(item=1)
-						img.icon1(src="../../assets/img/sec1_ico1.svg", alt="", status="like")
-						img.icon3(src="../../assets/img/sec1_ico3.svg", alt="", status="deslike")
-						img.icon2(src="../../assets/img/sec1_ico2.svg", alt="", status="heart")
-						
 				
-			//- .secRef
-			section.sec2.wow.fadeInUp
-				.sec2_block01.wow.fadeInLeft
-					img(src="../../assets/img/sec2_block01.svg", alt="")
-					h4
-						| Composição da quantidade de amostras trabalhadas 
-					h4
-						| Responsável: Gerente de Produto
-				
-				.containerTxt.wow.fadeInUp
-					.text.text1
-						| O <span class="bold">controle contábil da distribuição das amostras</span> é de extrema importância em nosso processo a fim de <span class="bold">evitar um faturamento desnecessário e consequente destinação de capital</span>.
-					.text.text1.mt0_5
-						| Por isso, é dever do GP:
-				
-				.sec2_block07.wow.fadeInLeft
-					img.fundo(src="../../assets/img/sec2_block07.svg", alt="")
-					img.sec2_ico2.wow.zoomIn(src="../../assets/img/sec2_ico2.png", alt="")
-					.text.text1
-						| <span class="bold roxo">No sistema Veeva CRM, rever o saldo ativo analisando o ciclo atual -1, por representante. Determinada a quantidade, após o faturamento, as amostras são encaminhadas para a casa dos colaboradores.</span>
-				
-				.sec2_block08.wow.fadeInLeft.delay1
-					img.fundo(src="../../assets/img/sec2_block08.svg", alt="")
-					img.sec2_ico2.wow.zoomIn(src="../../assets/img/sec2_block02.svg", alt="")
-					.text.text1.bold
-						| <a class="link" href="https://az.app.box.com/file/928749256110" target="_blank">Clique</a> e veja os limites máximos, por apresentação, para os produtos da linha CVRM.
-				
-				.containerTxt.containerTxt2.wow.fadeInUp
-					.text.text1
-						| <span class="bold">Após o faturamento, as amostras são enviadas para a casa do Representante que deve fazer a confirmação de recebimento no sistema Veeva CRM.</span>
-				
-				.info.wow.fadeInUp
-					img.sec2_block03.wow.zoomIn(src="../../assets/img/sec2_block03.svg", alt="")
-					.line
-						h4
-							| <span class="bold azul">Vamos ver se entendeu, arraste os procedimentos colocando-os na ordem correta.</span>
-					
-					.arrasteExercicio.arrasteExercicio1.mt1_5(arraste=1)
-						.arrasteExercicioBase
-							.itCons
-								.itContainer
-									.it.it1.dragDrop_element(arraste=1) Clicar no menu minhas amostras
-								.itContainer
-									.it.it2.dragDrop_element(arraste=2) Clicar em 'Recibo de Amostras Pendentes'
-								.itContainer
-									.it.it3.dragDrop_element(arraste=3) Confirmar o número do lote no sistema com o número que está na caixa da amostra
-								.itContainer
-									.it.it4.dragDrop_element(arraste=4) Clicar no botão confirmar
-								.itContainer
-									.it.it5.dragDrop_element(arraste=5) Informar a quantidade Recebida
-								.itContainer
-									.it.it6.dragDrop_element(arraste=6) Salvar
-
-							.contCons
-								.contContainer
-									.cont.dragDrop_element(alvo=1)
-								.contContainer
-									.cont.dragDrop_element(alvo=2)
-								.contContainer
-									.cont.dragDrop_element(alvo=3)
-								.contContainer
-									.cont.dragDrop_element(alvo=4)
-								.contContainer
-									.cont.dragDrop_element(alvo=5)
-								.contContainer
-									.cont.dragDrop_element(alvo=6)
-
-						butom.confirmar.mt2
-							| <span>Clique</span> para conferir.
-
-						.feed.feed-pos.wow.fadeIn
-							img(src="../../assets/img/sec2_block05.svg", alt="")
-							.text.text4
-								| <span class="bold">Uau! 100% certo, você é um especialista no assunto!</span>
-						
-						.feed.feed-neg.wow.fadeIn
-							img(src="../../assets/img/sec2_block06.svg", alt="")
-							.text.text4
-								| <span class="bold">Humm... teve alguns erros :(. Dê uma olhada na ordem correta e, se achar que está com dificuldade nesse tema, <a class="link" href="https://astrazeneca.sabacloud.com/Saba/Web_spf/E102PRD0001/common/ledetail/cours000000025483552/latestversion" target="_blank">clique</a> e assista ao vídeo com orientações completas.</span>
-						
-						.text.alert.text1.mt1.wow.fadeIn
-								| <span class="azul bold">Você também pode acessar o vídeo a qualquer momento diretamente no Cornerstone, para encontrá-lo digite no campo de buscas: "Recebimento de Amostras".</span>
 			
-			section.sec3.wow.fadeInUp
-				img.bg.wow.fadeInRight(src="../../assets/img/sec3-img1.png", alt="")
-				
-				.containerTxt.wow.fadeInUp
-					h1.azul 
-						| Qualidade das Amostras
-					.text.text1.mt0_5
-						| Bom, pensando agora que <span class="bold">as amostras já estão com os Representantes</span>, é fundamental garantirmos que elas <span class="bold">cheguem em perfeito estado para nossos médicos</span>.
-					.text.text1
-						| Assista ao vídeo abaixo com dicas de armazenagem e manuseio dos medicamentos. <span class="bold">Garantir a qualidade das amostras, enquanto sob seus cuidados, é responsabilidade dos nossos Representantes</span>.
 
-				.containerVideo.wow.zoomIn.delay1
-						video(src="../../assets/video/video2.mp4" controls controlsList="nodownload"  poster="../../assets/video/video2.png")
-
-				.blokc.wow.fadeInUp.delay1
-					//- .text
-					//- 	| <span class="bold roxo">Deixe sua opinião!</span>
-					.icons(item=2)
-						img.icon1(src="../../assets/img/sec1_ico1.svg", alt="", status="like")
-						img.icon3(src="../../assets/img/sec1_ico3.svg", alt="", status="deslike")
-						img.icon2(src="../../assets/img/sec1_ico2.svg", alt="", status="heart")
-			
-			section.sec4.wow.fadeInUp
-				img.bg.wow.fadeInLeft(src="../../assets/img/sec3-img2.png", alt="")
-				
-				.containerTxt.wow.fadeInUp
-					h1.azul 
-						| Controle e gerenciamento de entrega <br>de amostras junto aos HCPs
-					.text.text1.mt0_5
-						| <span class="bold">Enfim, hora de entregar as amostras para os médicos.</span>.
-					.text.text1.mt0_5
-						| Mas não é tão simples assim, pois a destinação ou uso incorreto dos nossos <br>medicamentos pode trazer consequências, por isso, <span class="bold">é importante termos a informação exata das quantidades e lotes das amostras entregues para cada médico</span>.
-					.text.text1.mt0_5
-						| Esse procedimento deve ser realizado no Veeva CRM.
-				
-				.info.wow.fadeInUp
-					img.sec2_block03.wow.zoomIn(src="../../assets/img/sec3-img3.svg", alt="")
-					.line
-						h4
-							| <span class="bold azul">Mostre que conhece esse passo a passo ordenando seus processos.</span>
-					
-					.arrasteExercicio.arrasteExercicio1.mt1_5(arraste=1)
-						.arrasteExercicioBase
-							.contCons
-								.contContainer
-									.cont.dragDrop_element(alvo=1)
-								.contContainer
-									.cont.dragDrop_element(alvo=2)
-								.contContainer
-									.cont.dragDrop_element(alvo=3)
-								.contContainer
-									.cont.dragDrop_element(alvo=4)
-								.contContainer
-									.cont.dragDrop_element(alvo=5)
-								.contContainer
-									.cont.dragDrop_element(alvo=6)
-								.contContainer
-									.cont.dragDrop_element(alvo=7)
-
-							.itCons
-								.itContainer
-									.it.it1.dragDrop_element(arraste=1) Clicar em 'Documentar uma visita'
-								.itContainer
-									.it.it2.dragDrop_element(arraste=2) Selecionar o nome do médico
-								.itContainer
-									.it.it3.dragDrop_element(arraste=3) Completar os dados da visita
-								.itContainer
-									.it.it4.dragDrop_element(arraste=4) Seguir para aba 'amostras'
-								.itContainer
-									.it.it5.dragDrop_element(arraste=5) Selecionar o lote que será entregue
-								.itContainer
-									.it.it6.dragDrop_element(arraste=6) Confirmar a quantidade
-								.itContainer
-									.it.it7.dragDrop_element(arraste=7) Coletar assinatura do médico
-
-						butom.confirmar.mt2
-							| <span>Clique</span> para conferir.
-
-						.feed.feed-pos.wow.fadeIn
-							img(src="../../assets/img/sec2_block05.svg", alt="")
-							.text.text4
-								| <span class="bold">Foi um arraso! Você colocou todos os passos na ordem correta!</span>
-						
-						.feed.feed-neg.wow.fadeIn
-							img(src="../../assets/img/sec2_block06.svg", alt="")
-							.text.text4
-								| <span class="bold"> Remontamos os processos na ordem correta para facilitar o entendimento, caso tenha alguma dificuldade com esse procedimento, <a class="link" href="https://astrazeneca.sabacloud.com/Saba/Web_spf/E102PRD0001/common/ledetail/cours000000025483548/latestversion" target="_blank">clique aqui</a> para assistir ao vídeo com as orientações completas que está disponível no Cornerstone SBX.
-								
-						.text.alert.text1.mt1.wow.fadeIn
-								img(src="../../assets/img/sec3-img4.svg", alt="")
-								| <span class="roxo3 bold">Lembre-se que você pode assistir também o vídeo quando quiser no Cornerstone SBX, para isso busque como "Visita com Amostras"</span>
-			
 			section.sec5.wow.fadeInUp
-				img.bg.wow.fadeInRight(src="../../assets/img/sec4-img1.png", alt="")
 				
 				.containerTxt.wow.fadeInUp
-					h1.azul 
-						| Roubo, perda ou extravio de amostras
-					.text.text1.mt0_5
-						| No dia a dia com as amostras, <span class="bold">situações não desejadas podem acontecer</span>, são <span class="bold">comuns extravios</span> e até mesmo <span class="bold">perda de medicamento</span>. E infelizmente, podemos nos deparar ainda com casos de <span class="bold">furtos ou roubos</span>.
-					.text.text1.mt0_5
-						| Problemas assim, podem contribuir para acontecer falsificações, comércio clandestino ou ingestão indevida do medicamento. <span class="bold">Situações que podem colocar em risco a reputação da AstraZeneca e, principalmente, a saúde dos nossos pacientes</span>.
-					.text.text1.mt0_5
-						| <span class="bold">Por isso, é importante muita atenção aos procedimentos e, principalmente, aos prazos que temos para realizá-los</span>.
-
+					h4 Composição da quantidade de amostras trabalhadas
+					h4.prop-l1 Responsável: Gerente de Produto/ANALISTA DE MARCA
+					img.sec-title.wow.zoomIn(src="../../assets/img/calculadora.svg", alt="")
+				
 				.info.wow.fadeInUp
-					img.sec-title.wow.zoomIn(src="../../assets/img/sec4-img2.svg", alt="")
-					.line
-						h4
-							| <span class="bold azul">Vamos ver se sabe nosso prazo de reação para qualquer caso de extravio.</span>
 					
-					.exercic02
-						h4
-							| <span class="bold azul">Clique no tempo que acha correto:</span>
-						.ques
-							.itq.itq1(it=0)
-								img.wow.zoomIn(src="../../assets/img/sec4-img-12.svg", alt="")
-							.itq.itq2(it=1)
-								img.wow.zoomIn(src="../../assets/img/sec4-img-14.svg", alt="")
-							.itq.itq3(it=0)
-								img.wow.zoomIn(src="../../assets/img/sec4-img-24.svg", alt="")
-							.itq.itq4(it=0)
-								img.wow.zoomIn(src="../../assets/img/sec4-img-72.svg", alt="")
-						.feedQues
-								img.feedImg.feedImgPos.wow.zoomIn(src="../../assets/img/sec4-img-pos.svg", alt="")
-								img.feedImg.feedImgNeg.wow.zoomIn(src="../../assets/img/sec4-img-neg.svg", alt="")
-
-				.infoBase.inativeB 
-					.baseX
-						img.sec-title.wow.zoomIn(src="../../assets/img/sec4-img-3.svg", alt="")
-						.text.text1.wow.fadeInUp Esse é o tempo máximo que você tem para notificar nosso time por meio do grupo no Outlook: <span class='azul2'>+BRCZ_ROUBOS_EXTRAVIOS_AGS</span>
-				
-				.containerTx2.wow.fadeInUp.inativeB 
+					.text.text1.mt0_5
+						| O controle da quantidade de amostras a serem distribuídas é essencial<br> dentro do nosso processo para evitar faturamentos desnecessários<br> e alocação indevida desse recurso com impacto financeiro.
 					.text.text1.mt0_5.azul
-						| <span class="bold">Em casos de furtos ou roubos</span>, além dessa notificação, é mandatório que <span class="bold">abra um Boletim de Ocorrência Policial</span> com uma descrição detalhada do incidente, <span class="bold">informando o nome do produto, lote e quantidades</span> subtraídas para que as autoridades competentes estejam cientes e possam tomar as providências cabíveis.
+						| <b>Portanto, é sua responsabilidade:</b>
+					.litd.mt1
+						img.sec-title.wow.zoomIn(src="../../assets/img/peopleRoxo.svg", alt="")
+						.text.text1
+							| No <b>sistema Veeva CRM</b>, revisar o saldo disponível analisando o ciclo atual -1 por representante. Com a determinação da quantidade, as amostras são enviadas para a residência dos colaboradores após o faturamento.
+					.text.text1.mt1_5.azul
+						| <b><a class="link azul" href="" target="_black">Clique</a> para conferir os limites máximos por apresentação para os produtos da linha de CVRM.</b>
+					.text.text1.mt0_5
+						| Após o faturamento, as amostras são despachadas para a residência do Representante,<br>que deve confirmar o recebimento no sistema Veeva CRM.
+						
+					
+				.containerTxt.wow.fadeInUp
+					h4 
+						| ROUBO, PERDA OU EXTRAVIO DE AMOSTRAS
+					img.sec-title.wow.zoomIn(src="../../assets/img/ladrao.svg", alt="")
+				
+				.info.wow.fadeInUp
+					
+					.text.text1.mt0_5
+						| No dia a dia com as amostras, situações indesejadas podem ocorrer, como extravios,<br> perda de medicamentos e, infelizmente, casos de furtos ou roubos.
 					.text.text1.mt0_5.azul
-						| <span class="bold">Envie também uma cópia deste boletim para o grupo +BRCZ_ROUBOS_EXTRAVIOS_AGS</span>. Se por qualquer motivo, o boletim de ocorrência policial elaborado não possuir todos os detalhes necessários, utilize o corpo do e-mail da sua notificação para acrescentar as informações essenciais que serão utilizadas pelos nossos times internos.
-					.text.text1.azul
-						| <span class="bold">Lembre-se que qualquer informação pode fazer total diferença na resolução do caso, por isso, relate tudo que lembrar!</span>
-					.text.text2.azul.mt2
-						| <b class="roxo">E se depois dos procedimentos realizados as amostras forem encontradas?</b>
-					.text.text1.azul.mt1
-						| <span class="bold">Você deve informar também</span>, se possível, imediatamente, ou  <span class="bold">no prazo máximo de até 24 horas</span>, o grupo +BRCZ_ROUBOS_EXTRAVIOS_AGS, no Outlook. No e-mail, descreva o nome do produto, lote e quantidades recuperados. 
-					.text.text1.azul.mt1
-						| Lembre-se de separar estas amostras das demais que você possui e aguarde orientações de como realizar a devolução para a AstraZeneca. <span class="bold">Estas amostras, sob nenhuma hipótese, podem ser entregues aos médicos.</span>
-					.block.wow.fadeInUp
-						img.sec-title.wow.zoomIn(src="../../assets/img/sec4-img-4.svg", alt="")
-						.text.text1.wow.fadeInUp
-							| <span class="bold">Você pode minimizar os danos causados pelo roubo ou perda de amostras com pequenas atitudes:</span>
-						.lisd
-							.text.text1.azul
-								| <i class="fa fa-caret-right" aria-hidden="true"></i> Saia de cada apenas com as amostras que serão entregues naquele dia;
-							.text.text1.azul
-								| <i class="fa fa-caret-right" aria-hidden="true"></i> Sempre que possível, estacione seu carro em estacionamentos;
-							.text.text1.azul
-								| <i class="fa fa-caret-right" aria-hidden="true"></i> Caso não tenha estacionamento no local, avalie levar as amostras com você.
-					.block2.wow.fadeInUp
-						.ifn
-							h2.vermelho
-								| Amostras danificadas ou suspeitas de falsificação
-							.text.text2.azul.mt2
-								| <span class="bold azul">Ao notar qualquer tipo de dano nas amostras ou aparência diferente do padrão</span>, sugerindo uma falsificação, <span class="bold azul">informe imediatamente o SAC usando o e-mail sac@astrazeneca.com</span>. Não abra, manipule as amostras ou tente corrigir as avarias e, principalmente, <span class="bold azul">não distribua estas amostras</span>.
-							.text.text2.azul.mt2
-								| Nosso <span class="bold azul">time de Garantia da Qualidade de Operações</span> é o responsável pela identificação e procedência dos desvios levando os casos aos times globais. Por isso, nestes casos, <span class="bold azul">aguarde as orientações de como proceder</span>.
-						img.sec-title.wow.zoomIn(src="../../assets/img/sec4-img-5.png", alt="")
+						| <b>Esses problemas podem contribuir para falsificações, comércio clandestino ou uso<br> indevido dos medicamentos, colocando em risco a reputação da AstraZeneca e, <br>acima de tudo, a saúde dos nossos pacientes.</b>
+					.text.text1.mt0_5
+						| Nossos representantes, claro, estão mais sujeitos a essas ocorrências, mas é <br>importante que saiba apenas que temos rigorosos procedimentos que devem <br>ser seguidos por eles e também por nossos GDs.
+					
+					
+					.blockColor 
+						img.peopleTriste.wow.zoomIn(src="../../assets/img/peopleTriste.svg", alt="")
+						.text
+							| Sobre esse tema ainda, pode ocorrer a localização ou recuperação das amostras. É importante que saiba que, <b>amostras recuperadas, sob nenhuma hipótese, podem ser entregues aos médicos</b>. Elas passarão por um processo de logística reversa para destruição na AstraZeneca.
+				
+			section.sec6.wow.fadeInUp 
 
-			section.sec6.wow.fadeInUp.inativeB 
-				img.bg.wow.fadeInLeft(src="../../assets/img/sec6_img1.png", alt="")
+				.containerTxt.containerTxt2.wow.fadeInUp
+					img.sec-title.wow.zoomIn(src="../../assets/img/remedio.svg", alt="")
+					
 				
-				.containerTxt.wow.fadeInUp
-					h1.roxo 
-						| Amostras vencidas
-					.text.text1.mt1
-						| Nossas amostras, assim como todos produtos, têm um prazo de validade e <span class="bold">é de suma importância que os pacientes não as recebam com prazos vencidos</span>, por isso, <span class="bold">elas podem ser entregues com uma margem mínima de 3 mesess</span>, antes do seu vencimento, aos profissionais de saúde. Esse é o prazo mínimo necessário para que ela cumpra seu percurso logístico com tempo hábil para o médico orientar um tratamento com segurança para seus pacientes.
-					.text.text1.mt0_5
-						| <span class="bold">Se, por qualquer motivo, as amostras estiverem com um prazo inferior a 3 meses, é necessário acionar o processo de logística reversa para que elas voltem à AstraZeneca para destruição.</span>
-					.info
-						.text.text1
-							| <b class="azul">Procedimento:</b> os <span class="bold">Representantes</span> devem alertar seu <span class="bold">Gerente Distrital</span> com as informações do <span class="bold">produto</span>, lote e <span class="bold">quantidade</span>, e aguardar orientações do operador logístico para a coleta dos medicamentos.
-						.text.text1.mt1
-							| <span class="bold azul">Os GDs, ao receber o alerta de seus representantes, precisam:</span>
-						.lit.mt1
-							.itx
-								.numb 1
-								.text.text1
-									| <span class="bold">Verificar com os demais membros de sua equipe se há mais amostras nas mesmas condições.</span>
-							.itx.mt0_5
-								.numb 2
-								.text.text1
-									| <span class="bold">Consolidar as informações passando um e-mail para <a class="link" href="mailto:brczfaturamentopromocional@astrazeneca.com" target="_blank">brczfaturamentopromocional@astrazeneca.com</a>.</span>
-						.text.text1.mt1
-							| A partir daí, o <span class="bold">operador logístico</span> será notificado e seguirá com os processos internos para a coleta das amostras para sua destruição.
-
-	
-			section.sec7.wow.fadeInUp.inativeB 
-				img.bg.wow.fadeInRight(src="../../assets/img/sec7_img1.png", alt="")
-				
-				.containerTxt.wow.fadeInUp
-					h1.azul 
-						| O que fazer com as amostras nos casos de movimentações de colaboradores?
-					.text.text1.mt0_5
-						| É comum e natural a <span class="bold">movimentação de profissionais</span> (como mudança de linha,  <span class="italic bold">job rotations</span>, pedidos de demissão ou até mesmo desligamentos) a qualquer momento, mas <span class="bold">o que fazer com suas amostras nesses casos?</span>
-					.text.text1.mt0_5
-						| Em casos de <b class="azul">movimentações internas</b>, o próprio <span class="bold">Representante</span> deve <b>acessar o Veeva CRM</b> para realocar as amostras para o perfil do GD.
-					.lit
-						img.wow.zoomIn(src="../../assets/img/sec7_img2.svg", alt="")
-						.text.text1
-							| Caso tenha dúvidas sobre esse procedimento, <a class="link" href="https://astrazeneca.sabacloud.com/Saba/Web_spf/E102PRD0001/common/ledetail/21834815/latestversion" target="_blank">clique aqui</a>  para assistir ao vídeo ou, quando desejar, acesse o Cornerstone SBX digitando "transferência de amostras".
-				
-				.containerTxt2.wow.fadeInUp.mt2
-					.text.text1
-						| Já nos casos de <b class="azul">movimentações externas</b> (pedido de demissão ou desligamento) é necessário que o <span class="bold">Gerente Distrital</span> siga as orientações do RH e, no <span class="bold">prazo de 24 horas</span>:
-					.list.mt1
-						.text.text1
-							| <span class="bold">1. Preencha o formulário de declaração de materiais;</span>
-						.text.text1
-							| <span class="bold">2. Confirme fisicamente as quantidades;</span>
-						.text.text1
-							| <span class="bold">3. Conclua a transferência no Veeva;</span>
-						.text.text1
-							| <span class="bold">4. Ajuste o inventário de AGs.</span>
-
-			section.sec8.wow.fadeInUp.inativeB 
-				img.bg.wow.fadeInLeft(src="../../assets/img/sec8_img1.png", alt="")
-				
-				.containerTxt.wow.fadeInUp
-					h1.azul 
-						| <span class="italic">Recall</span> de amostras
-					.text.text1.mt1
-						| Você sabe o que fazer ou qual a importância dos recalls de amostras?
-					.text.text1.mt0_5
-						| <b class="azul" >Confira no vídeo a importância desse mecanismo de segurança em nosso negócio.</b>
-				
-				.containerVideo.wow.zoomIn.delay1
+				.info.info2.wow.fadeInUp
+					.baseInfo
+						h4.azul Recall de amostras
+						.text.textB
+							| Esse é mais um processo importante<br> em nosso negócio.
+						.text.textB
+							| <b>Conheça-o em detalhes assistindo ao vídeo.</b>
+					.containerVideo.wow.zoomIn.delay1
 						video(src="../../assets/video/video3.mp4" controls controlsList="nodownload"  poster="../../assets/video/video2.png")
-
-				.blokc.wow.fadeInUp.delay1
-					//- .text
-					//- 	| <span class="bold roxo">Deixe sua opinião!</span>
-					.icons(item=3)
-						img.icon1(src="../../assets/img/sec1_ico1.svg", alt="", status="like")
-						img.icon3(src="../../assets/img/sec1_ico3.svg", alt="", status="deslike")
-						img.icon2(src="../../assets/img/sec1_ico2.svg", alt="", status="heart")
-
 			
-			section.sec9.wow.fadeInUp.inativeB#controlComplete
+		
+				
+					
+			section.sec9.wow.fadeInUp#controlComplete
 				
 				.info
-					img.tx(src="../../assets/img/sec8_img3.svg", alt="")
-					.text
-							|	<b class="azul">Aqui encerramos nosso conteúdo, bora testar seus conhecimentos em um quiz com apenas 5 questões? É bem rapidinho!</b>
+					img.lapis(src="../../assets/img/lapis.svg", alt="")
+					.infoBase
+						.text Encerramos aqui o nosso treinamento, hora de testar <br>seus conhecimentos, são apenas quatro questões.<br> <b>Responda-as e confira o resultado</b>.
+						.liX 
+							img(src="../../assets/img/sobre.svg", alt="")
+							.text.roxo.bold Lembre-se de que você pode acessar à política completa <a href="" class="link roxo" target="_blank">clicando aqui</a>.
+							
 					
 					
 					.containerExercicio
 						.exercicioInit.exercicioInit1.mt2_5(correta=3)
 							.indice 1
 							.text.title.subtitulo
-									<span class="">Assim que as amostras chegam na casa dos Representantes, eles devem:</span>
+									<span class="">Por que é importante o controle das quantidades de amostras junto aos representantes?</span>
 							.alters
 								.alter.alter1(res=0, indice=1)
 									.selector
 									.text.altTxt 
-										<span class="azul">1. Sair para entregá-las aos médicos.</span>
+										<span class="azul">Para evitar o risco de extravios</span>
 								.alter.alter2(res=0, indice=2)
 									.selector
 									.text.altTxt 
-										<span class="azul">2. Avisar seu GD.</span>
+										<span class="azul">Para evitar a deterioração e vencimento das amostras</span>
 								.alter.alter3(res=1, indice=3)
 									.selector
 									.text.altTxt 
-										<span class="azul">3. Confirmar o recebimento no Veeva.</span>
+										<span class="azul">Para evitar faturamentos desnecessários e alocação de recursos financeiros.</span>
 								.alter.alter4(res=0, indice=4)
 									.selector
 									.text.altTxt 
-										<span class="azul">4. Colocá-las no carro.</span>
+										<span class="azul">Para reduzir o risco de falsificações.</span>
 						
 						.exercicioInit.exercicioInit2.mt2_5(correta=4)
 							.indice 2
-							.text.title.subtitulo
-									<span class="">Onde as amostras devem ser armazenadas após seu recebimento?</span>
-							.alters
-								.alter.alter1(res=0, indice=1)
-									.selector
-									.text.altTxt 
-										<span class="azul">1. No carro, preferencialmente no porta-malas.</span>
-								.alter.alter2(res=0, indice=2)
-									.selector
-									.text.altTxt 
-										<span class="azul">2. Em um local limpo</span>
-								.alter.alter3(res=0, indice=3)
-									.selector
-									.text.altTxt 
-										<span class="azul">3. Longe de materiais de limpeza, inseticidas, insetos e poluição.</span>
-								.alter.alter4(res=1, indice=4)
-									.selector
-									.text.altTxt 
-										<span class="azul">4. As alternativas 2 e 3 estão corretas.</span>
-						
-						.exercicioInit.exercicioInit3.mt2_5(correta=4)
-							.indice 3
 							.text.title.subtitulo
 									<span class="">No que se refere a qualidade das amostras:</span>
 							.alters
 								.alter.alter1(res=0, indice=1)
 									.selector
 									.text.altTxt 
-										<span class="azul">1. Elas simbolizam a imagem da AstraZeneca perante aos médicos.</span>
-								.alter.alter2.alterCustom(res=0, indice=2)
+										<span class="azul">Elas simbolizam a imagem da AstraZeneca perante aos médicos.</span>
+								.alter.alter2(res=0, indice=2)
 									.selector
 									.text.altTxt 
-										<span class="azul">2. Sob condições inadequadas de armazenamento podem comprometer sua eficácia.</span>
+										<span class="azul">Sob condições inadequadas de armazenamento podem comprometer sua eficácia.</span>
 								.alter.alter3(res=0, indice=3)
 									.selector
 									.text.altTxt 
-										<span class="azul">3. Os times de campos são também responsáveis pelos seus cuidados.</span>
+										<span class="azul">Os times de campos são também responsáveis pelos seus cuidados.</span>
 								.alter.alter4(res=1, indice=4)
 									.selector
 									.text.altTxt 
-										<span class="azul">4. Todas alternativas estão corretas.</span>
-							
-						.exercicioInit.exercicioInit4.mt2_5(correta=3)
-							.indice 4
+										<span class="azul">Todas alternativas estão corretas.</span>
+						
+						.exercicioInit.exercicioInit3.mt2_5(correta=4)
+							.indice 3
 							.text.title.subtitulo
-									<span class="">O que fazer em caso de roubo ou furto de amostras?</span>
+									<span class="">É responsabilidade o Gerente de Produto ou Analista de Marca a determinação da quantidade de amostras a serem distribuídas na linha CVRM:</span>
 							.alters
 								.alter.alter1(res=0, indice=1)
 									.selector
 									.text.altTxt 
-										<span class="azul">1. Abrir um boletim de ocorrência na delegacia mais próxima.</span>
+										<span class="azul">Verdadeiro.</span>
+								.alter.alter2.alterCustom(res=1, indice=2)
+									.selector
+									.text.altTxt 
+										<span class="azul">Falso.</span>
+								
+						.exercicioInit.exercicioInit4.mt2_5(correta=3)
+							.indice 4
+							.text.title.subtitulo
+									<span class="">Assinale a afirmativa correta relacionada ao recall de medicamentos:</span>
+							.alters
+								.alter.alter1(res=0, indice=1)
+									.selector
+									.text.altTxt 
+										<span class="azul">Trata-se de um processo mandatório que vale também para as amostras <br>grátis comercializadas.</span>
 								.alter.alter2(res=0, indice=2)
 									.selector
 									.text.altTxt 
-										<span class="azul">2. Informar ao GD.</span>
+										<span class="azul">Trata-se de uma oportunidade de testar nossa agilidade e garantir que todos <br>saibam o que fazer.</span>
 								.alter.alter3.alterCustom(res=1, indice=3)
 									.selector
 									.text.altTxt 
-										<span class="azul">3. Informar ao grupo responsável na AstraZeneca (+BRCZ_ROUBOS_EXTRAVIOS_AGS) enviando o boletim de ocorrência aberto em até 24 horas.</span>
+										<span class="azul">Trata-se de um processo válido apenas para os medicamentos comercializados.</span>
 								.alter.alter4.alterCustom(res=0, indice=4)
 									.selector
 									.text.altTxt 
-										<span class="azul">4. Informar ao grupo responsável na AstraZeneca (+BRCZ_ROUBOS_EXTRAVIOS_AGS) imediatamente ao episódio, sem necessidade de abertura de boletim de ocorrência.</span>
+										<span class="azul">Alternativas 1 e 2 estão corretas.</span>
 							
-						.exercicioInit.exercicioInit5.mt2_5(correta=4)
-							.indice 5
-							.text.title.subtitulo
-									<span class=""> Assinale a afirmativa correta relacionada ao <i>recall</i> de medicamentos:</span>
-							.alters
-								.alter.alter1.alterCustom(res=0, indice=1)
-									.selector
-									.text.altTxt 
-										<span class="azul">1. Trata-se de um processo mandatório que vale também para as amostras <br>grátis comercializadas.</span>
-								.alter.alter2.alterCustom(res=0, indice=2)
-									.selector
-									.text.altTxt 
-										<span class="azul">2. O representante tem um prazo de 48 horas para enviar as informações solicitadas.</span>
-								.alter.alter3.alterCustom(res=0, indice=3)
-									.selector
-									.text.altTxt 
-										<span class="azul">3. Trata-se de um processo válido apenas para os medicamentos comercializados.</span>
-								.alter.alter4(res=1 , indice=4)
-									.selector
-									.text.altTxt 
-										<span class="azul">4. Alternativas 1 e 2 estão corretas.</span>
 						
 						.btnConfrmar.mt1_5
 							| FINALIZAR
 						
 						.feed.feed-positivo1.mt1_5.wow.fadeIn
-							.ico
-								img(src="../../assets/img/sinal1.svg", alt="")
 							.textBase
 								.text
-									| <span class="bold azul">Parabéns!<br> 
-								.text
-									| <span class="bold azul">Você assimilou todo o conteúdo! Siga em frente e bom trabalho!</span>
+									| <span class="bold azul">Parabéns! Você assimilou todo o conteúdo! Siga em frente e bom trabalho!</span>
 						
 						.feed.feed-positivo2.mt1_5.wow.fadeIn
-							.ico
-								img(src="../../assets/img/sinal2.svg", alt="")
 							.textBase
 								.text
-									| <span class="bold azul">Apenas uma questão errada!<br> 
-								.text
-									| <span class="bold azul">Veja com atenção qual seria a resposta correta e bom trabalho!</span>
+									| <span class="bold azul">Uma questão errada! Veja com atenção qual seria a resposta correta e bom trabalho!</span>
 						
 						.feed.feed-negativo.mt1_5.wow.fadeIn
-							.ico
-								img(src="../../assets/img/sinal3.svg", alt="")
 							.textBase
 								.text
-									| <span class="bold azul">Talvez seja melhor rever o conteúdo, o que acha?<br> 
-								.text
-									| <span class="bold azul">Esfrie a cabeça e tente novamente!</span>
+									| <span class="bold branca">Hum, melhor rever esse conteúdo. Esfrie a cabeça e, mais tarde, tente novamente!</span>
 			
-			section.rodape.wow.fadeInUp
-				.baseT 
-					.text
-						| Ficou alguma dúvida?
-					.text
-						| Para consultar a política completa <a class="link" href="https://az.app.box.com/file/875626531411" target="_blank">clique aqui</a>.
-
 
 block scripts
 	script(src="../../vendor/wow.min.js")
