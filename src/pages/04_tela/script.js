@@ -161,10 +161,10 @@ function quiz() {
       });
 
       var _feed = null;
-      if (res == 5) {
+      if (res == 3) {
         _feed = $(".containerExercicio .feed-positivo1");
         $(".containerExercicio .feed-positivo1").css("display", "flex");
-      } else if (res == 4) {
+      } else if (res == 2) {
         _feed = $(".containerExercicio .feed-positivo2");
         $(".containerExercicio .feed-positivo2").css("display", "flex");
       } else {

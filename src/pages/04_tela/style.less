@@ -126,6 +126,9 @@ body {
   font-style: italic;
 }
 
+.ml {
+  padding-left: 2em;
+}
 
 
 .link{
@@ -207,7 +210,7 @@ section{
 
 .sec1 {
   position: relative;
-  height: 48em;
+  height: 50em;
   z-index: 0;
 
   &::before{
@@ -240,7 +243,6 @@ section{
     top: -5em;
     width: 33.5em;
     left: -16em;
-    -o-object-fit: cover;
     object-fit: cover;
     opacity: 1;
     z-index: 0;
@@ -284,7 +286,6 @@ section{
     top: -3.5em;
     width: 8em;
     right: 1em;
-    -o-object-fit: contain;
     object-fit: contain;
     opacity: 1;
     z-index: 1;
@@ -292,12 +293,13 @@ section{
 
   .tela01_01{
     position: absolute;
-    top: 6.5em;
+    bottom: 2em;
     width: 25em;
     height: 16em;
-    right: 3em;
+    right: -5em;
     object-fit: contain;
   }
+
     
 
   .containerTxt{
@@ -310,7 +312,7 @@ section{
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
     padding: 2em;
-    padding-bottom: 4em;
+    padding-bottom: 8em;
 
   }
 
@@ -320,7 +322,7 @@ section{
     background: #292929;
     width: 39em;
     height: 22.1em;
-    top: 22.5em;
+    top: 25.5em;
     left: 14em;
 
     video{
@@ -627,6 +629,35 @@ section{
   background-image: url(../../assets/img/sec2.png);
   background-repeat: repeat;
   background-size: cover;
+  padding-bottom: 4em;
+
+  .litd {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0 auto;
+    margin-top: 2em;
+
+    img {
+      position: relative;
+      width: 6em;
+      height: 6em;
+      object-fit: contain;
+    }
+
+    .text {
+      position: relative;
+      width: 100%;
+      padding: 1em;
+      border: 0.1em solid #003865;
+      border-left: 0.1em solid transparent;
+      border-top-right-radius: 2em;
+      border-bottom-right-radius: 2em;
+    }
+  }
 
   
   .containerTxt {
@@ -658,8 +689,11 @@ section{
   
         &.prop-l1 {
           margin-left: 2em;
+          text-transform: uppercase;
         }
       }
+
+      
 
       .sec-title {
         position: absolute;
@@ -932,10 +966,10 @@ section{
 
     img{
       position: absolute;
-      left: -5em;
-      top: -2em;
+      left: -7em;
+      top: -1.5em;
       width: 13em;
-      height: 18em;
+      height: 19em;
     }
     h4{
       position: relative;
@@ -961,6 +995,77 @@ section{
   background-image: url(../../assets/img/fundo_amarelo.png);
   background-repeat: repeat;
   background-size: cover;
+
+  .sec2_block01 {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6em;
+      padding-top: 0;
+      padding-left: 4em;
+      background: #00365f;
+      filter: drop-shadow(0px 0px 4.13px rgba(0, 0, 0, 0.75));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      z-index: 2;
+      margin-top: 4em;
+  
+      h4 {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 1.8em;
+        padding: 0;
+        margin: 0;
+  
+        &.prop-l1 {
+          margin-left: 2em;
+        }
+      }
+    }
+  
+    .sec2_01_img {
+      position: absolute;
+      width: 20em;
+      height: 14em;
+      object-fit: contain;
+      top: 0;
+      right: 0;
+    }
+  
+    .containerTxt {
+      position: relative;
+      // padding: 7em;
+  
+      &.containerTxt2 {
+        padding-bottom: 1em;
+      }
+  
+    }
+
+    .infoxd{
+      position: relative;
+      padding: 4em;
+      padding-left: 2em;
+      padding: 2em 20em;
+      padding-left: 4em;
+
+    }
+
+    .blockRoxo{
+      position: relative;
+      margin: 0 auto;
+      width: 80%;
+      background-color: #830051;
+      padding: 1em;
+      color: #fff;
+      margin-bottom: 4em;
+    }
   
   .containerTxt {
     position: relative;
@@ -988,7 +1093,7 @@ section{
     }
 
     &.containerTxt2{
-      margin-top: 4em;
+      margin-top: 3em;
 
       .sec-title {
         position: absolute;
@@ -1027,7 +1132,6 @@ section{
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
     padding: 2em;
-    padding-bottom: 4em;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
 
     
@@ -1061,6 +1165,7 @@ section{
       align-items: center;
       gap: 0.5em;
       margin: 2em auto;
+      margin-bottom: 4em;
 
       img{
         position: relative;
@@ -1070,7 +1175,7 @@ section{
       }
 
       .text{
-        width: 80%;
+        width: 100%;
       }
     }
 
